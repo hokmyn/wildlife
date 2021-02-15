@@ -49,17 +49,62 @@
       </div>
     </section>
     <section class="main">
-      <h2 class="main__title">Latest articles</h2>
-      <p class="main__subtitle">Breaking news from the wild</p>
-      <div class="main__slider slider"></div>
-      <h3 class="main__form-title">Get notified about new amazing articles</h3>
-      <form class="main-form">
-        <fieldset>
-          <input type="text" class="main-form__input" placeholder="Email">
-          <button class="main-form__button button">Send</button>
-        </fieldset>
-      </form>
+      <div class="wrapper">
+        <h2 class="main__title">Latest articles</h2>
+        <p class="main__subtitle">Breaking news from the wild</p>
+        <div class="main__slider slider">
+          <div class="slider-track">
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+            <div class="slider-item"></div>
+          </div>
+          <div class="slider-button__prev"></div>
+          <div class="slider-button__next"></div>
+        </div>
+        <h3 class="main__form-title">Get notified about new amazing articles</h3>
+        <form class="main-form">
+          <fieldset>
+            <input type="text" class="main-form__input" placeholder="Email">
+            <button class="main-form__button button">Send</button>
+          </fieldset>
+        </form>
+      </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-wrapper">
+        <div class="logo">
+          <a href="/" class="logo-link">
+            <img src="./images/logo.svg" alt="logo" class="logo__image">
+            <span class="logo-text">wildlife</span>
+          </a>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__list list">
+            <li class="list__item item">
+              <a href="/" class="item__link">Articles</a>
+            </li>
+            <li class="list__item item">
+              <a href="/" class="item__link">About us</a>
+            </li>
+            <li class="list__item item">
+              <a href="/" class="item__link">Learn more</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social-links">
+          <div class="social-links__item facebook"></div>
+          <div class="social-links__item instagram"></div>
+          <div class="social-links__item pinterest"></div>
+          <div class="social-links__item telegram"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src='./js/script.js'></script>
 </body>
 </html>

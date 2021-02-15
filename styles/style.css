@@ -71,6 +71,7 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition: all .2s;
 }
 
 .logo-text {
@@ -131,6 +132,7 @@ body {
   color: #fff;
   text-decoration: none;
   line-height: 58px;
+  transition: all .2s;
 }
 
 .item__link:hover,
@@ -216,6 +218,59 @@ body {
   margin-bottom: 240px;
 }
 
+.slider {
+  overflow: hidden;
+  background-color: pink;
+  position: relative;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.slider-track {
+  display: flex;
+  transition: .2s;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.slider-item {
+  height: 360px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-item:nth-child(3n+1) {
+  background-image: url('../images/main-image1.jpg');
+}
+
+.slider-item:nth-child(3n+2) {
+  background-image: url('../images/main-image2.jpg');
+}
+
+.slider-item:nth-child(3n+3) {
+  background-image: url('../images/main-image3.jpg');
+}
+
+.slider-button__prev {
+  background-image: url('../images/arrow-left.png');
+  margin-right: 60px;
+  position: absolute;
+  top: 42%;
+  left: 0;
+  width: 30px;
+  height: 70px;
+}
+
+.slider-button__next {
+  background-image: url('../images/arrow-right.png');
+  margin-left: 60px;
+  position: absolute;
+  top: 42%;
+  right: 0;
+  width: 30px;
+  height: 70px;
+}
+
 .main__form-title {
   font-size: 27px;
   line-height: 40px;
@@ -252,3 +307,63 @@ fieldset {
 .main-form__input:focus::placeholder {
   opacity: 0;
 }
+
+.footer {
+  min-height: 360px;
+  background: #c9a5b7 url('../images/footer-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .list__item {
+  list-style: none;
+}
+
+.footer .list__item:last-child {
+  border: 0;
+}
+
+.footer .list__item:last-child .item__link {
+  padding: 0;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 241px;
+}
+
+.social-links__item {
+  width: 40px;
+  height: 40px;
+  margin-right: 27px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all .4s;
+}
+
+.social-links__item:hover {
+  opacity: .6;
+}
+
+.social-links__item:last-child {
+  margin-right: 0;
+}
+
+.facebook {background: url('../images/facebook.png')}
+.instagram {background: url('../images/instagram.png')}
+.pinterest {background:url('../images/pinterest.png')}
+.telegram {background:url('../images/telegram.png')}
